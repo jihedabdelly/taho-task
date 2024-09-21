@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS spendings (
+    id SERIAL PRIMARY KEY,
+    userid INTEGER NOT NULL,
+    count INTEGER NOT NULL,
+    createdat TIMESTAMP DEFAULT NOW(),
+    type TEXT NOT NULL,
+    model TEXT NOT NULL
+);
