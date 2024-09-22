@@ -3,9 +3,7 @@
   import { Link } from "svelte-routing"; 
 
   const handleClick = () => {
-    console.log(11)
     navigate("/add-spending");
-    console.log(22)
   };
 </script>
 
