@@ -10,8 +10,15 @@ This guide should cover the steps needed to setup the **postgresql database**, t
 
 ## Backend rest api
 - Access /api with `cd api/`
+- Run `npm install` to install dependencies
 - Run `node index.js` to start the server
 
 # React app
 - Access /react-spending-app with `cd react-spending-app/`
+- Run `npm install` to install dependencies
 - Start the react app with `npm run start`
+
+# Svelte app
+- Access /svelte-spending-app with `cd svelte-spending-app/`
+- Run `npm install` to install dependencies
+- Start the svelte app with `npm run dev`
