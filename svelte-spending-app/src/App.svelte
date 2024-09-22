@@ -1,16 +1,12 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-</script>
-
-<main>
+    import { Router, Route } from 'svelte-routing';
+    import { routes } from './main'; // Assuming you have this exported
   
-
+  </script>
   
-
+  <Router>
+    {#each routes as { path, component }}
+      <Route path={path} component={component} />
+    {/each}
+  </Router>
   
-</main>
-
-<style>
-  
-</style>

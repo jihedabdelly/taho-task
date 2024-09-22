@@ -13,7 +13,7 @@ interface Spending {
 
 const SpendingTable: React.FC<{ data: Spending[] }> = ({ data }) => {
 	return (
-		<div className=" px-3 ">
+		<div className="px-3">
 			<table className="min-w-full table-auto border border-gray-300">
 				<thead className="bg-gray-200">
 					<tr>

@@ -43,23 +43,15 @@ const Home: React.FC = () => {
 		});
   };
 
-	/* const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-		setFilters({ ...filters, [e.target.name]: e.target.value });
-	}; */
-	
-	/* const applyFilters = async () => {
-		const data = await getSpendings(filters);
-		setSpendings(data);
-	}; */
 
   return (
     <div className=" p-4" >
-      <h1 className="text-2xl font-bold mb-4">User Spendings</h1>
+      <h1 className="text-2xl font-bold mt-4 mb-10 flex justify-center">User Spendings</h1>
       <SpendingChart data={spendings} />
 			<AddSpendingBtn />
 
 			{/* Filter Form */}
-      <div className="mb-4">
+      <div className="mb-4 flex justify-center">
         <input
           type="number"
           name="userid"

@@ -59,7 +59,8 @@ const AddSpendingForm: React.FC = () => {
           <option value="Crypto">Crypto</option>
         </select>
       </div>
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2">
+      <div className=" flex justify-center"></div>
+      <button type="submit" className="bg-blue-500 text-white px-4 py-2 mt-5">
         Add Spending
       </button>
     </form>

@@ -29,7 +29,8 @@ const SpendingChart: React.FC<{ data: Spending[] }> = ({ data }) => {
     const aggregatedData = aggregateData(data);
 
   return (
-    <BarChart width={600} height={300} data={aggregatedData}>
+    <div className=' flex justify-center '>
+<BarChart width={800} height={400} data={aggregatedData}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="type" />
       <YAxis />
@@ -37,6 +38,8 @@ const SpendingChart: React.FC<{ data: Spending[] }> = ({ data }) => {
       <Legend />
       <Bar dataKey="count" fill="#82ca9d" />
     </BarChart>
+    </div>
+    
   );
 };
 
