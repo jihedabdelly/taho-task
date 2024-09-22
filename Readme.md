@@ -8,3 +8,10 @@ This guide should cover the steps needed to setup the **postgresql database**, t
 - Create a new user and grant it privileges (for better security) with `CREATE USER spending_user WITH PASSWORD 'secure_password';` and then `GRANT ALL PRIVILEGES ON DATABASE spending_db TO spending_user;`
 - Exit the postgres gui with `\q`
 
+## Backend rest api
+- Access /api with `cd api/`
+- Run `node index.js` to start the server
+
+# React app
+- Access /react-spending-app with `cd react-spending-app/`
+- Start the react app with `npm run start`
