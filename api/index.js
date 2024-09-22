@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const spendingRoutes = require('./routes/spendingRoutes')
 const pool = require('./database/db');
@@ -21,6 +22,7 @@ pool.query(createTableSql)
   });
 
 app.use(express.json());
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/', spendingRoutes);
   

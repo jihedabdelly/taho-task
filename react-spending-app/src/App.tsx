@@ -1,16 +1,18 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import AddSpending from './pages/AddSpending';
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1 className="text-3xl font-bold underline">
-        Hello world! hello again
-      </h1>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add-spending" element={<AddSpending />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
